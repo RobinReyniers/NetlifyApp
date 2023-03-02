@@ -10,10 +10,7 @@ export default function Home({ pets }: any) {
   return (
     <ul>
       {pets.map((pet: any) => (
-        <li key={pet._id}>
-          {pet?.name}
-          {pet?.name}
-        </li>
+        <li key={pet._id}>{pet?.name}</li>
       ))}
     </ul>
   );
