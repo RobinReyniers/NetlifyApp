@@ -2,11 +2,14 @@ import { createClient } from "next-sanity";
 
 export default function Home({ pets }: any) {
   return (
-    <ul>
-      {pets.map((pet: any) => (
-        <li key={pet._id}>{pet?.name}</li>
-      ))}
-    </ul>
+    <>
+      <div>These are my beautiful pets:</div>
+      <ul>
+        {pets.map((pet: any) => (
+          <li key={pet._id}>{pet?.name}</li>
+        ))}
+      </ul>
+    </>
   );
 }
 
