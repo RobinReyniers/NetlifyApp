@@ -7,11 +7,10 @@ function Jokes() {
     fetch("https://api.chucknorris.io/jokes/random")
       .then((res) => res.json())
       .then((data) => {
-        console.log(data);
         setjoke(data);
       });
   }, []);
-  return <div>{joke}</div>;
+  return <p>{joke}</p>;
 }
 
 export default Jokes;
