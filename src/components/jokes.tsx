@@ -6,7 +6,7 @@ function jokes() {
   useEffect(() => {
     fetch("https://api.chucknorris.io/jokes/random")
       .then((res) => res.json())
-      .then((data) => console.log(data));
+      .then((data) => setJoke(data));
   }, []);
   return <div>{joke}</div>;
 }
