@@ -17,9 +17,9 @@ export default function Home() {
       </Head>
       <main className={styles.main}>
         <div className={styles.description}>
-          <Jokes />
           <p>
-            Robin Reyniers&nbsp;
+            <Jokes />
+            &nbsp;
             <code className={styles.code}>src/pages/index.tsx</code>
           </p>
           <div>
